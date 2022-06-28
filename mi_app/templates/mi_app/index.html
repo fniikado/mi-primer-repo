@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    ESTO ES UNA LPANTILLA RENDERIZADA POR UNA VIEW DE DJANGO !!!
+    <form action="" method="get">
+        <label for="nombre">Cual es tu nombre? </label>
+        <input type="text" name="nombre">
+
+        <button type="submit"> enviar </button>
+    </form>
+
+    <h2>Hola como estas {{nombre}}?</h2>
 </body>
 </html>
