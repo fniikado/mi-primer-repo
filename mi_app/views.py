@@ -9,5 +9,8 @@ def saludo(request):
 def saludar_a(request, nombre):
     return HttpResponse(f'Hola como estas {nombre.capitalize()}?')
 
+    def mostrar_mi_template(request):
+        return render(request, 'mi_app/index.html')
+
 
 
