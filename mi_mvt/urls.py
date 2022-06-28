@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludar/', saludo),
     path('saludar/persona/<nombre>', saludar_a),
-    path('mi-template/', saludo_personalizado),
+    path('saludo_personalizado/', saludo_personalizado),
     path('estudiantes/', listar_estudiantes)
 ]
