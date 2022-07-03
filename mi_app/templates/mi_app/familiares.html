@@ -7,12 +7,13 @@
     <title>MIS FAMILIARES</title>
 </head>
 <body>
+
     <ul>
         {% for familiar in familiares %}
-            <h3 style="color: green">{{familiar.id}}</h3>
-            <li>Nombre: {{familiar.nombre}} <br></li>
-            <li>Apellido: {{familiar.apellido}} <br></li> 
-            <li>Edad: {{familiar.edad}}<br></li>
+            <h3 style="color: #4b0082">{{familiar.id}}</h3>
+            <li><b>Nombre:</b> {{familiar.nombre}}<br></li>
+            <li><b>Apellido:</b> {{familiar.apellido}} <br></li> 
+            <li><b>Edad:</b> {{familiar.edad}}<br></li>
         {% endfor %}
     </ul>
 
