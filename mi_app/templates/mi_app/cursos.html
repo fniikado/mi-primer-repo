@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends "mi_app/base.html" %}
+
+    {% block cuerpo %}
     <ul>
+        <h2>LISTADO DE CURSOS</h2>
         {% for curso in cursos %}
-            <li>Curso: {{curso.nombre}} Camada: {{curso.camada}} <br></li> 
+            <li>{{curso.id}}) <b>Curso:</b> {{curso.nombre}} <br>&nbsp;&nbsp;&nbsp;&nbsp;<b>Camada:</b> {{curso.camada}} <br><br></li> 
         {% endfor %}
     </ul>
-</body>
-</html>
+    {% endblock %}

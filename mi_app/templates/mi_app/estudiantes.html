@@ -1,20 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+{% extends "mi_app/base.html" %}
+
+    {% block cuerpo %}
     <ul>
+        <h2>LISTADO DE ESTUDIANTES</h2>
         {% for estudiante in estudiantes %}
-            <li>Nombre: {{estudiante.nombre}} <br></li>
-            <li>Apellido: {{estudiante.apellido}} <br></li> 
-            <li>Email: {{estudiante.email}}</li>
+            <h3>{{estudiante.id}}</h3>
+            Nombre: {{estudiante.nombre}} <br>
+            Apellido: {{estudiante.apellido}} <br>
+            Email: {{estudiante.email}}
         {% endfor %}
     </ul>
-
-</body>
-</html>
+    {% endblock %}

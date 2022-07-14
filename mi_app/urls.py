@@ -1,6 +1,5 @@
 from django.contrib import admin
-from mi_app.views import (listar_familiares, saludo_personalizado, saludo, saludar_a, listar_estudiantes, 
-listar_cursos,)
+from mi_app.views import *
 from django.urls import path
 
 urlpatterns = [
@@ -10,4 +9,8 @@ urlpatterns = [
     path('estudiantes/', listar_estudiantes),
     path('cursos/', listar_cursos),
     path('familiares/', listar_familiares),
+    path('cursoFormulario/', cursoFormulario),
+    path('estudianteFormulario/', estudianteFormulario),
+    path('familiarFormulario/', familiarFormulario),
+    path('buscarCurso/', formulario_busqueda),
 ]

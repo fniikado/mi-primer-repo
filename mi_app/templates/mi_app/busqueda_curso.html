@@ -1,0 +1,16 @@
+{% extends "mi_app/base.html" %}
+{% block cuerpo %}
+
+    <h1>BUSQUEDA DE CURSO POR NOMBRE</h1>
+
+    {% if busqueda_formulario %}
+
+        <form action="" method="GET">
+
+            {{busqueda_formulario}}
+            <button type="submit">Buscar</button>
+
+        </form>
+    {% endif %}
+
+{% endblock %}
